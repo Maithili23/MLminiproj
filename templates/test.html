@@ -1,0 +1,30 @@
+<html >
+    <head>
+        <script type="text/javascript">
+            function alertFilename()
+            {
+                var thefile = document.getElementById('thefile');
+                return thefile
+            }
+        </script>
+    </head>
+
+<body style="align-content: center;background-color: darkolivegreen;">
+
+    <div>
+            <h1 style="color: darkolivegreen;background-color: whitesmoke;text-align: center;padding: 30px;font-size: 60px;"> DIGIT RECOGNITION  </h1>
+    </div>
+
+    <article style="text-align: center; padding: 30px;border:2px solid whitesmoke;color: whitesmoke;font-size:xx-large;font-style: normal;font-family: cursive;border-radius: 75px;">
+    <form method="POST", action="{{url_for('home')}}">
+        <script> x=alertFilename()</script>
+        
+       <p> <b> Enter text file: </b></p>
+       <input type="file" id="myfile" name="myfile"/><br><br></form>
+            
+        <input type="submit" value="submit" style="font-size: large;background-color: whitesmoke;font-weight: bolder;color: green;padding: 10px;border-radius: 10px;"/>
+    </form>
+</article>
+   
+</body>
+</html>
